@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration</title>
+</head>
+<body>
+<form>
+	NAME:<input type="text" name="nm">
+	EMAIL:<input type="email" name="em">
+	submit:<input type="submit" name="sb">
+</form method = "post">
+<?php
+$con=mysqli_connect('localhost','root','Aryan@123','upllive_db');
+if (isset($_POST['sb'])) {
+  $name=$_POST['nm'];
+  $email=$_POST['em'];
+       $query="INSERT INTO aeryan(NAME,EMAIL)VALUES('$name','$email')";
+       $run=mysqli_query($con,$query);
+    // code...
+</body>
+</html>

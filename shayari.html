@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SHAYARI/POETRY</title>
+	<style type="text/css"> 
+        #main-header{
+            text-align:center;
+            background-color: black;
+            border-radius: 15em;
+            border-style: dotted;
+            color: antiquewhite;
+            padding: 5px;
+        }
+        #main-header1{
+        	text-align: center;
+        	background-color: seagreen;
+        	border-radius: 20em;
+        	padding: 2px;
+          visibility: inherit;
+        }
+        #main-footer{
+            border: 5px red solid;
+            border-style: dotted;
+        }
+         h3{
+          text-align: center;
+          background: blue;
+          border-radius: 5em;
+          
+          background-position: center;
+          border-style: inset;
+          border-color: whitesmoke;
+        }
+         a:hover{
+          color: red;
+        }
+        a{
+          color: antiquewhite;
+
+        }
+        div{
+          border-style: inset;
+          border-color: red;
+          border-width: 10px;
+          align-content: center;
+          
+        }
+        div,p{
+          text-align: center;
+        }
+    </style>
+	<header id="main-header">
+	<h1>SHAYARI/POETRY</h1>
+</header>
+<br>
+</head>
+
+<b>
+        <?php
+          include("ConnectionONS.php");
+        ?>
+<footer id="main-footer">
+<body bgcolor="orange">
+	 <header id="main-header1">
+      <h2>PERFORMERS</h2>
+  </header>
+    <p align="center">
+	<a href="shayari video.html">
+      <img src="images/p1 shayari.jpeg" alt="My Sample Image" width="250">  
+      <a/>
+  <a href="shayari video.html">
+      <img src="images/p2 shayari.jpeg" alt="My Sample Image" width="250"> 
+  </a> 
+  <a href="shayari video.html">
+      <img src="images/p3 shayari.jpg" alt="My Sample Image" width="250">
+  </a> 
+  <a href="shayari video.html">
+      <img src="images/p4 shayari.jpeg" alt="My Sample Image" width="250">
+  </a> 
+   <a href="shayari video.html">
+      <img src="images/p5 shayari.jpeg" alt="My Sample Image" width="250">
+  </a> 
+  <a href="shayari video.html">
+      <h3>Click here to watch video</h3> 
+  </a>    
+      <br><br><br>
+      </p>
+
+       <hr>
+      <hr>
+      <div>
+        <p>
+          <form  action="./voting.html" method="post" onsubmit="ConnectionONS.php"> 
+          <font size="8"> Vote For: </font><br> 
+         <iframe width="620" height="572" src="https://strawpoll.com/embed/a4a96afjp" style="width: 100%; height: 572px;" frameborder="0" allowfullscreen></iframe>
+          </form>
+        </p>
+      </div>
+
+<div style="margin-top:500px"></div>
+
+</body>
+</html>

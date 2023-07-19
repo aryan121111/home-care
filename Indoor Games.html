@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6916639632135129"
+     crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> indoor game</title>
+<style type="text/css">
+            body{
+             background-image: url(images/Splash.jpg);
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-position: center;
+             background-size: cover;
+             }            
+        </style>
+</head>
+<body  >
+    <center>
+        <font face="quicksand">
+            <b>
+                <?php
+                  iclude("ConnectionI.php");
+                ?>
+<div class="main">
+<div class="indoor game">
+
+<h1>INDOOR GAME</h1>
+<form id="register" action="./joining.html" method="post" onsubmit="ConnectionI.php">
+
+    <label> Selection Of Player:</label>
+<br>
+<select name="player">
+    <option value="solo">Solo
+    </option>
+    <option value="duo">Duo
+    </option>
+</select>
+<br><br>
+
+<label>Player Name1: </label>
+<br>
+<input type="text" name="fname" id="playername" placeholder="Player Name" required>
+<br><br>
+<label>Player Name2: </label>
+<br>
+<input type="text" name="fname" id="playername" placeholder="Player Name" required>
+<br><br>
+ 
+ <label> Selection of Game :</label>
+ <br>
+ &nbsp;&nbsp;&nbsp;
+ <input type="radio" name="selection of game" id="chess">
+&nbsp;
+<img src="images/Chess.jpg" height="100" width="100">
+<!-- <span id="chess">Chess</span>
+    &nbsp;&nbsp;&nbsp; -->
+<input type="radio" name="selection of game " id="carromboard">
+&nbsp;
+<img src="images/Carrom.jpg" height="100" width="100">
+<!-- <span id="carromboard">Carrom Board</span>
+    &nbsp;&nbsp;&nbsp; -->
+<input type="radio" name="selection of game" id="badminton">
+&nbsp;
+<img src="images/Badminton.jpg" height="100" width="100">
+<!-- <span id="badminton">Badminton</span>
+    &nbsp;&nbsp;&nbsp; -->
+<input type="radio" name="selection of game" id="tabletennis">
+&nbsp;
+<img src="images/Table Tennis.jpg" height="100" width="100">
+<!-- <span id="tabletennis">Table Tennis</span> -->
+<br><br>
+<label> Age Limit :</label>
+<br>
+<select name="age">
+    <option value="below18">Below 18
+    </option>
+    <option value="18-30">18-30
+    </option>
+    <option value="above30">Above 30
+    </option>
+</select>
+<!-- &nbsp;&nbsp;&nbsp;
+<input type="radio" name="age limit" id="below 18">
+&nbsp;
+<span id="below 18">Below 18</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="age limit" id="18-30">
+&nbsp;
+<span id="18-30">18-30</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="age limit" id="above 30">
+&nbsp;
+<span id=" above 30"> Above 30</span> -->
+<br><br>
+<label> Address:</label>
+<br>
+<input  type="text" name="aname" id="address" placeholder="enter address" required>
+<br><br>
+<label> Contact Number : </label>
+<br>
+<input type="text" name="cname" id="contactnumber" placeholder="enter contact no." required>
+<br><br>
+<label>Email id:</label>
+<br>
+<input type="text" name="ename" id="emailid" placeholder="enter your email id" required>
+<br><br>
+<label> Whatsapp Number :</label>
+<br>
+<input type="text" name="wname" id="whatsappno." placeholder="enter your whatsapp no." required>
+<br><br>
+<label>Password</label>
+<br>
+<input type="Password" name="password" id="password" placeholder="Password" required>
+<br><br>
+<label>Confirm Password</label>
+<br>
+<input type="Confirm Password" name="confirmpassword" id="confirmpassword" placeholder="Password" required>
+<br><br>
+
+      <input type="Submit" name="Submit" value="SUBMIT" id="submit">
+            </b>
+        </font>
+    </center>
+</form>
+</div><!--end indoor game-->
+</div><!--end main-->
+</body>
+</html>

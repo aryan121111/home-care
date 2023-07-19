@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> outdoor game</title>
+        <style type="text/css">
+            body{
+             background-image: url(images/Splash.jpg);
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-position: center;
+             background-size: cover;
+             }            
+        </style>
+</head>
+<body>
+<div class="main">
+<div class="outdoor game">
+    <center>
+        <font face="quicksand">
+            <b>
+                <?php
+                  iclude("ConnectionO.php");
+                ?>
+<h1>OUTDOOR GAME</h1>
+<form id="register" action="./joining.html" method="post" onsubmit="ConnectionO.php">
+<label> Team name : </label>
+<br>
+<input type="text" name="fname"
+id="teamname" placeholder=" enter your team name" required>
+<br><br>
+<label> Captain name : </label>
+<br>
+<input type="text" name="cname"
+id="name" placeholder="enter captain name" required>
+<br><br>
+<label> Vice Captain name</label>
+<br>
+<input type="text" name="vname" id="name"  placeholder="enter vice captain name" required>
+<br><br>
+<label> Selection of Game :</label>
+<br>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="selection of game" id="football">
+&nbsp;
+<img src="images/Football.jpg" height="100" width="100">
+<!-- <span id="football">Football</span>
+    &nbsp;&nbsp;&nbsp; -->
+<input type="radio" name="selection of game" id="Cricket">
+&nbsp;
+<img src="images/Cricket.jpg" height="100" width="100">
+
+<input type="radio" name="selection of game" id="basketball">
+&nbsp;
+<img src="images/Basketball.jpg" height="100" width="100">
+<!-- <span id="Basketball">Basketball</span>
+    &nbsp;&nbsp;&nbsp; -->
+<input type="radio" name="selection of game" id="volleyball">
+&nbsp;
+<img src="images/Vollyball.jpg" height="100" width="100">
+<!-- <span id="volleyball"> Volleyball</span> -->
+<br><br>
+<label>Age:</label>
+<br>
+<select name="age">
+    <option value="below18">Below 18
+    </option>
+    <option value="18-30">18-30
+    </option>
+    <option value="above30">Above 30
+    </option>
+</select>
+
+<br><br>
+<label> Address of Team :</label>
+<br>
+<input  type="text" name="aname" id="addressofteam" placeholder="enter address" required>
+<br><br>
+<label> Contact Number : </label>
+<br>
+<input type="text" name="cname" id="contactnumber" placeholder="enter contact no." required>
+<br><br>
+<label>Email id:</label>
+<br>
+<input type="text" name="ename" id="emailid" placeholder="enter your email id" required>
+<br><br>
+<label> Whatsapp Number :</label>
+<br>
+<input type="text" name="wname" id="whatsappno." placeholder="enter your whatsapp no." required>
+<br><br>
+<label>Password</label>
+<br>
+<input type="Password" name="password" id="password" placeholder="Password" required>
+<br><br>
+<label>Confirm Password</label>
+<br>
+<input type="Password" name="confirmpassword" id="confirmpassword" placeholder="Password" required>
+<br><br>
+    <input type="Submit" name="Submit" value="SUBMIT" id="submit">
+            </b>
+        </font>
+    </center>
+</form>
+</div><!--end outdoor game-->
+</div><!--end main-->
+</body>
+</html>

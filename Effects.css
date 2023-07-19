@@ -1,0 +1,99 @@
+body{
+    background: url("images/Back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#UN {
+    border: 1px black;
+    border-radius: 50px;
+    padding-right: 0px;
+    padding: 20px 15px 20px 15px;
+    width: 200px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 10px 0px 15px 0px;
+}
+
+#PW {
+    border: 1px black;
+    border-radius: 50px;
+    padding-right: 0px;
+    padding: 20px 15px 20px 15px;
+    width: 200px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 10px 0px 15px 0px;
+}
+
+#L {
+    border-radius: 50px;
+    background: #FFFF00;
+    padding: 20px;
+    width: 200px;
+}
+
+#CA {
+    border-radius: 50px;
+    padding: 20px;
+    width: 200px;
+    background: #0DFD;
+}
+
+.boxed {
+  width: 400px;
+  height: 350px;
+  border: 9px solid red ;
+}
+
+#frozen-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+img {
+    background-repeat: no-repeat;
+}
+
+button {
+  border: 0;
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 50px;
+  border-radius: 50px;
+  color: black;
+  outline: none;
+  position: relative;
+}
+
+button:before{
+  content: '';
+  display: block;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left: 0;
+  border-radius: 50px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.green {
+   background-image: linear-gradient(to right, #25aae1, #40e495);
+   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.green:hover:before {
+  background-position: left bottom;
+}
